@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+:root {
+    --bg:rgb(215, 227, 247);
+}
+html,body,#app{
+    min-height: 100%;
+    height: 100%;
+    transition: background-color 0.3s ;
+}
+body{
+    background-color: var(--bg);
+}
+
+.dark{
+    background-color: rgb(24,25,26);
+}
+
+.tarjeta{
+    background-color: white;
+    border-radius: 3%;
+    transition: background-color 0.3s ;
+
+}
+.dark .tarjeta{
+    background-color: rgb(36,37,38);
+}
+.imagen{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.imagen img {
+    width: 100%;
+    max-width: 100%;
+}
+.nombre{
+    color: rgb(43,146,232);
+
+}
+.nombre h4 {
+    margin-bottom: 0;
+    font-size: 24px;
+}
+.titulo{
+    color: rgb(177,176,178);
+    font-size: 20px;
+
+}
+.dark .titulo{
+    color: white;
+}
+
+.boton {
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    border-radius: 50%;
+    transition: background-color 0.3s ;
+}
+.dark .boton{
+    background-color: rgb(58,59,60);
+}
+.boton a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    border-radius: 50%;
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 20px;
+    transition: background-color 0.3s ;
+}
+.dark .boton a{
+    background-color: rgb(58,59,60);
+    
+}
+.boton a:hover{
+    color:white;
+    background-color: dodgerblue;
+}
+.contenBoton{
+    width: 100%;
+    transition: background-color 0.3s ;
+}
+#toggle{
+    width: 30px;
+    height: 30px;
+    font-size: smaller;
+    color:dodgerblue;
+    transition: background-color 0.3s ;
+
+}
+#toggle:hover{
+    color:white;
+    background-color: dodgerblue;  
+    cursor: pointer;
+    
+}
